@@ -1,0 +1,58 @@
+.section__two {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+.section__page_two {
+    background-image: url(../../img/we-best/bg2.png);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+}
+
+.section__two_caption {
+    height: 100px;
+    width: 960px;
+    font-family: 'gagalinregular';
+    font-size: 72px;
+    color: #2f3234;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content__section {
+    height: 285px;
+    width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content__elem {
+    width: 300px;
+    height: 275px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.elem__icon {
+    width: 280px;
+    height: 105px;
+}
+
+.elem__title {
+    width: 280px;
+    height: 65px;
+    font-family: 'lifehackmedium';
+    font-size: 24px;
+    color: #2f3234
+}
+
+.elem__text {
+    width: 280px;
+    height: 100px;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    color: #2f3234;
+}
