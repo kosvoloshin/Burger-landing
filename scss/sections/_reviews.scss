@@ -8,6 +8,8 @@
     display: flex;
     flex-flow: row wrap;    
     align-content: stretch;
+    height: 100%;
+    width: 100%;
 }
 
 .reviews__item {
@@ -15,6 +17,8 @@
     height: 50%;
 }
 
-.item__photo {
-    display: none;
+.item__photo-1 {
+    background-image: url(../img/content/image_1.png);
+    width: 100%;
+    height: 100%;
 }
