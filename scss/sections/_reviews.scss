@@ -15,10 +15,111 @@
 .reviews__item {
     width: 25%;
     height: 50%;
+    position: relative;
+    &:hover .reviews__info {
+        display: block;
+    }
+}
+
+.reviews__img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
 }
 
 .item__photo-1 {
     background-image: url(../img/content/image_1.png);
-    width: 100%;
+}
+
+.item__photo-2 {
+    background-image: url(../img/content/image_2.png);
+    background-position: 10% 10%;
+}
+
+.item__photo-3 {
+    background-image: url(../img/content/image_3.png);
+    background-position: center;
+}
+
+.item__photo-4 {
+    background-image: url(../img/content/image_4.png);
+    background-position: center;
+}
+
+.item__photo-5 {
+    background-image: url(../img/content/image_5.png);
+    background-position: center;
+}
+
+.item__photo-6 {
+    background-image: url(../img/content/image_6.png);
+    background-position: center;
+}
+
+.item__photo-7 {
+    background-image: url(../img/content/image_7.png);
+    background-position: center;
+}
+
+.item__photo-8 {
+    background-image: url(../img/content/image_8.png);
+    background-position: center;
+}
+
+.reviews__info {
     height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding-top: rem(50px);
+    display: none;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.reviews__name {
+    width: 230px;
+    height: 30px;
+    color: #ffffff;
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42;
+    text-decoration: none;
+    margin-left: rem(35px);
+}
+
+.reviews__message {
+    width: 230px;
+    height: 150px;
+    color: #ffffff;
+    font-family: 'ubuntu';
+    font-weight: 300;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42;
+    text-decoration: none;
+    margin-left: rem(35px);
+}
+
+.review__btn {
+    width: 110px;
+    height: 35px;
+    background-color: $dark;
+    border-radius: 3px;
+    margin-left: rem(35px);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 8px;
+    font-family: 'ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42;
+    &:hover {
+        cursor: pointer;
+        transition: 1.5s;
+    }
 }
