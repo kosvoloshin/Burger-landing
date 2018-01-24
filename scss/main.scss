@@ -1,21 +1,21 @@
 //config
 
-@import "config/_variables";
-@import "config/_mixins";
+@import "./config/_variables";
+@import "./config/_mixins";
 
 
 //base
 
-@import "layout/_base";
-@import "layout/_adjustment";
-@import "layout/_fonts";
+@import "./layout/_base";
+@import "./layout/_adjustment";
+@import "./layout/_fonts";
 
 //sections
 
-@import "sections/_start-page";
-@import "sections/_we-best.scss";
-@import "sections/_reviews.scss";
-
+@import "./sections/_start-page";
+@import "./sections/_we-best.scss";
+@import "./sections/_reviews.scss";
+@import "./sections/_team.scss";
 
 
 

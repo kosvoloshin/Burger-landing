@@ -1,0 +1,106 @@
+.section__team {
+    background-image: url(../img/bg/bg-team.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.team__content {
+    height: 100%;
+    width: 49%;
+    position: absolute;
+    background-color: rgba(49, 52, 54, 0.9);
+    top: 0;
+    right: 0;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.team__info {
+    height: 470px;
+    width: 410px;
+}
+
+.accordeon-team {
+    height: 330px;
+    width: 380px;
+}
+
+.accordeon__item {
+    width: 378px;
+    padding-top: 40px;
+    position: relative;
+    &:hover {
+        .accordeon__info {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .accordeon__link {
+            color: #f9b43b;
+        }
+
+        .accordeon__thumb {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.accordeon__title {
+    height: 30px;
+    width: 375px;
+}
+
+.accordeon__thumb {
+    background-image: url(../img/content/Polygon1.png);
+    height: 6px;
+    width: 9px;
+    display: inline-block;
+    text-align: center;
+}
+
+.accordeon__name {
+    display: inline-block;
+}
+
+.accordeon__link {
+    color: #ffffff;
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.accordeon__info {
+    height: 0;
+    overflow: hidden;
+}
+
+.accordeon__avatar {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+.accordeon__text {
+    width: 240px;
+    height: 100%;
+    display: inline-block;
+    color: #e3e4e4;
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.accordeon__position {
+    font-weight: 500;
+    color: #e3e4e4;
+    padding-bottom: 25px;
+}

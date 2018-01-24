@@ -42,18 +42,48 @@
 }
 
 .nav-section {
-    width: 26px;
-    height: 185px;
     position: fixed;
     top: 75px;
     right: 50px;
 }
 
 .sidebar__item {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #fff;
-    display: block;
     margin-bottom: 15px;
+}
+
+.sidebar__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: relative;
+    &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    &:before {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    &:after {
+        width: 6px;
+        height: 6px;
+        background: #fff;
+    }
+
+    &:hover:before{
+        width: 16px;
+        height: 16px;
+        opacity: 1;
+      }
 }

@@ -1,7 +1,9 @@
-.section__reviews {
+.reviews {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .reviews__list {
@@ -71,12 +73,10 @@
 .reviews__info {
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
     padding-top: rem(50px);
     display: none;
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px 20px;
 }
 
 .reviews__name {
@@ -86,9 +86,7 @@
     font-family: 'gagalinregular';
     font-size: 14px;
     font-weight: normal;
-    line-height: 1.42;
     text-decoration: none;
-    margin-left: rem(35px);
 }
 
 .reviews__message {
@@ -101,7 +99,6 @@
     font-weight: normal;
     line-height: 1.42;
     text-decoration: none;
-    margin-left: rem(35px);
 }
 
 .review__btn {
@@ -109,7 +106,6 @@
     height: 35px;
     background-color: $dark;
     border-radius: 3px;
-    margin-left: rem(35px);
     color: #ffffff;
     text-align: center;
     padding-top: 8px;
