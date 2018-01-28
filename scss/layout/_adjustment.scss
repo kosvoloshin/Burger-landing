@@ -1,6 +1,9 @@
 .wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
+    min-width: 940px + 20px;
+    min-height: 100%;
 }
 
 .maincontent {
@@ -9,8 +12,9 @@
 }
 
 .container {
+    height: 100%;
     width: 940px;
-    margin: 0auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +28,8 @@
 }
 
 .order-link {
-    min-width: rem(98px);
-    padding: rem(10px) rem(17px);
+    min-width: 98px;
+    padding: 10px 17px;
     border-radius: 5px;
     background-color: $orange;
     color: #fff;

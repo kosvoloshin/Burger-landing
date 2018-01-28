@@ -1,0 +1,22 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: #5c5c5c;
+    width: 25px;
+    height: 25px;
+    &:hover {
+      fill: #ffffff;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+.icon-phone {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #e45028;
+    width: 14px;
+    height: 14px;
+  }

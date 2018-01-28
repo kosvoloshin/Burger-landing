@@ -10,8 +10,7 @@
 
 .section__title--best {
     color: #2f3234;
-    padding: 0;
-    margin-bottom: rem(60px);
+    padding-bottom: rem(40px);
 }
 
 .best__item {
@@ -28,6 +27,8 @@
     font-weight: normal;
     line-height: 1.42;
     text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .best__text {

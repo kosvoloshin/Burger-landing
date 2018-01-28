@@ -1,0 +1,92 @@
+.section__menu {
+    background-image: url(../img/bg/bg-menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section__title-menu {
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.accordeon-menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.accordeon-menu__sections {
+    height: 100%;
+    font-size: 0;
+}
+
+.accordeon-menu__item {
+    display: inline-block;
+    height: 100%;
+}
+
+.accordeon-menu__trigger {
+    height: 100%;
+    display: block;
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+    position: relative;
+    float: left;
+}
+
+.accordeon-menu__item_active {
+    position: relative;
+
+        .accordeon-menu__text {
+            width: 540px;
+            overflow: hidden;
+        }
+
+        .accordeon-menu__desk {
+            width: 100%;
+            height: 100%;
+        }
+
+        .accordeon-menu__trigger-text {
+            color: $yellow;
+        }
+}
+
+.accordeon-menu__trigger-text {
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    color: #fff;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: rotate(270deg);
+    transform-origin: 0;
+}
+
+.accordeon-menu__text {
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(49, 52, 54, 0.9);
+}
+
+.accordeon-menu__desk {
+    height: 100%;
+    width: 100%;
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 35px;
+}
+
