@@ -26,6 +26,12 @@
     margin-right: auto;
 }
 
+.header__menu{
+    @include tablets {
+        display: none;
+    }
+}
+
 .nav {
     margin-right: rem(15px);
 }
@@ -43,8 +49,8 @@
         display: inline-block;
         vertical-align: middle;
         content: ' ';
-        @include circle(5px, #fff);
-        margin: 0 12px;
+        @include circle(rem(5px), #fff);
+        margin: 0 rem(12px);
     }
     &:last-child:after {
         display: none;
@@ -54,7 +60,7 @@
 .nav__link {
     color: #ffffff;
     font-family: 'ubuntu';
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase; 
@@ -64,6 +70,54 @@
     transition: .5s;
     &:hover {
         text-decoration: underline;
+    }
+}
+
+.header__menu-tablets {
+    vertical-align: middle;
+    position: relative;
+    height: rem(22px);
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 31px;
+    display: none;
+
+    @include tablets {
+        display: inline-block;
+    }
+} 
+
+.header__menu-tablets-item {
+    height: rem(22px);
+    white-space: rem(24px);
+}
+
+.header__menu-tablets-link {
+    display: inline-block;
+    background: #fff;
+	width: rem(24px);
+	height: rem(5px);
+    border-radius: rem(3px);
+    position: relative;
+    
+    &:before {
+        content: "";
+        background: #fff;
+	    width: rem(24px);
+	    height: rem(5px);
+        border-radius: rem(3px);
+        position: absolute;
+        top: rem(10px);
+    }
+
+    &:after {
+        content: "";
+        background: #fff;
+	    width: rem(24px);
+	    height: rem(5px);
+        border-radius: rem(3px);
+        position: absolute;
+        bottom: rem(10px);
     }
 }
 
@@ -100,7 +154,7 @@
 .section__title {
     color: #f9b43b;
     font-family: 'gagalinregular';
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 300;
     line-height: 1.42;
     margin: 0;
@@ -110,14 +164,13 @@
     color: #ffffff;
     font-family: 'lifehackmedium';
     font-size: rem(65px);
-    font-weight: 400;
     line-height: 1.42;
-    width: 415px;
+    width: rem(415px);
 }
 
 .control {
     position: absolute;
-    bottom: 10px;
+    bottom: rem(10px);
 }
 
 

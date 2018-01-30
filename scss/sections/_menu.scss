@@ -32,7 +32,7 @@
 .accordeon-menu__trigger {
     height: 100%;
     display: block;
-    width: 80px;
+    width: rem(80px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -45,7 +45,7 @@
     position: relative;
 
         .accordeon-menu__text {
-            width: 540px;
+            width: rem(540px);
             overflow: hidden;
         }
 
@@ -61,11 +61,11 @@
 
 .accordeon-menu__trigger-text {
     font-family: 'gagalinregular';
-    font-size: 40px;
+    font-size: rem(40px);
     color: #fff;
     white-space: nowrap;
     position: absolute;
-    bottom: 40px;
+    bottom: rem(40px);
     left: 50%;
     transform: rotate(270deg);
     transform-origin: 0;
@@ -82,11 +82,11 @@
     height: 100%;
     width: 100%;
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.6;
     text-decoration: none;
     color: #f2f2f2;
-    padding: 35px;
+    padding: rem(35px);
 }
 

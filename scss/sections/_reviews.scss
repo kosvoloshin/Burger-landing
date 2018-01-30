@@ -76,42 +76,42 @@
     padding-top: rem(50px);
     display: none;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 50px 20px;
+    padding: rem(50px) rem(20px);
 }
 
 .reviews__name {
-    width: 230px;
-    height: 30px;
+    width: rem(230px);
+    height: rem(30px);
     color: #ffffff;
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
     text-decoration: none;
 }
 
 .reviews__message {
-    width: 230px;
-    height: 150px;
+    width: rem(230px);
+    height: rem(150px);
     color: #ffffff;
     font-family: 'ubuntu';
     font-weight: 300;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
     line-height: 1.42;
     text-decoration: none;
 }
 
 .review__btn {
-    width: 110px;
-    height: 35px;
+    width: rem(110px);
+    height: rem(35px);
     background-color: $dark;
-    border-radius: 3px;
+    border-radius: rem(3px);
     color: #ffffff;
     text-align: center;
-    padding-top: 8px;
+    padding-top: rem(8px);
     font-family: 'ubuntu';
     font-weight: 500;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
     line-height: 1.42;
     &:hover {

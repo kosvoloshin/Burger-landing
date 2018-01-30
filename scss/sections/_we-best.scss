@@ -14,8 +14,8 @@
 }
 
 .best__item {
-    width: 300px;
-    height: 300px;
+    width: rem(300px);
+    height: rem(300px);
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -23,17 +23,17 @@
 
 .best__title{
     font-family: 'lifehackmedium';
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: normal;
     line-height: 1.42;
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: rem(20px);
+    padding-bottom: rem(10px);
 }
 
 .best__text {
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     line-height: 1.45;
     text-decoration: none;

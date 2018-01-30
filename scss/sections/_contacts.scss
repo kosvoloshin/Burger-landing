@@ -11,14 +11,14 @@
 
 .footer {
     background-image: url(../img/bg/bg-footer.jpg);
-    height: 58px;
+    height: rem(58px);
     width: 100%;
     position: absolute;
     bottom: 0;
 }
 
 .footer__content {
-    width: 940px;
+    width: rem(940px);
     margin: 0 auto;
     display: flex;
 }
@@ -28,12 +28,12 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    padding-top: 8px;
+    padding-top: rem(8px);
 }
 
 .footer__address {
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -45,7 +45,7 @@
 
 .footer__number {
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 700;
     color: #e45028;
     text-decoration: none;
@@ -58,7 +58,7 @@
     justify-content: center;
     align-items: flex-end;
     width: 50%;
-    padding-top: 15px;
+    padding-top: rem(15px);
 }
 
 .footer__socials-list {
@@ -67,5 +67,5 @@
 
 .footer__socials-item {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: rem(20px);
 }

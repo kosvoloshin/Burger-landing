@@ -13,24 +13,24 @@
     background-color: rgba(49, 52, 54, 0.9);
     top: 0;
     right: 0;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: rem(100px);
+    padding-left: rem(100px);
     display: flex;
     flex-direction: column;
 }
 
 .team__info {
-    height: 470px;
+    height: rem(470px);
     width: 70%;
 }
 
 .accordeon-team {
-    height: 330px;
-    width: 380px;
+    height: rem(330px);
+    width: rem(380px);
 }
 
 .accordeon__item_active {
-    width: 378px;
+    width: rem(378px);
     position: relative;
         .accordeon__info {
             height: 100%;
@@ -46,13 +46,13 @@
 }
 
 .accordeon__title {
-    height: 30px;
-    width: 375px;
+    height: rem(30px);
+    width: rem(375px);
 }
 
 .accordeon__trigger {
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
     text-decoration: none;
     display: inline-block;
@@ -65,10 +65,10 @@
     content: "";
     height: 0;
     width: 0;
-    border: 6px solid transparent;
+    border: rem(6px) solid transparent;
     border-top-color: $yellow;
-    border-bottom-width: 0px;
-    margin-right: 10px;
+    border-bottom-width: rem(0px);
+    margin-right: rem(10px);
     }
 }
 
@@ -84,21 +84,21 @@
 .accordeon__avatar {
     display: inline-block;
     vertical-align: top;
-    padding-left: 10px;
+    padding-left: rem(10px);
 }
 
 .accordeon__text {
-    width: 240px;
+    width: rem(240px);
     height: 100%;
     display: inline-block;
     color: #e3e4e4;
     font-family: 'ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
-    padding-left: 20px;
+    padding-left: rem(20px);
 }
 
 .accordeon__position {
