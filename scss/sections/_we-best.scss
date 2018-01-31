@@ -13,12 +13,24 @@
     padding-bottom: rem(40px);
 }
 
+.best__list {
+    @include tablets {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 .best__item {
     width: rem(300px);
     height: rem(300px);
     display: inline-block;
     vertical-align: top;
     text-align: center;
+
+    @include tablets {
+        width: 25%;
+    }
 }
 
 .best__title{

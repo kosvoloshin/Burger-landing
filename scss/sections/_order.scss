@@ -13,6 +13,13 @@
 .form {
     color: #fff;
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+    }
 }
 
 .form__column {
@@ -22,6 +29,13 @@
 
     &:last-child {
         margin-left: rem(20px);
+    }
+
+    @include tablets {
+        &:last-child {
+            margin-left: 0;
+        }
+        width: 45%;
     }
 }
 

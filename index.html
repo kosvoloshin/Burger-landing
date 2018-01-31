@@ -57,7 +57,7 @@
                         </header>
                         <div class="start__content">
                             <div class="start__img">
-                                <img src="./img/drops.png" alt="drops">
+                                <img src="./img/drops.png" alt="drops" class="start__burger">
                             </div>
                             <div class="start__caption">
                                 <h2 class="section__title">МЫ ДЕЛАЕМ</h2>
@@ -121,7 +121,7 @@
                         <div class="team__content">
                             <div class="team__info">
                                 <h2 class="section__title">КОМАНДА</h2>
-                                <accordeon class="accordeon-team">
+                                <div class="accordeon-team">
                                     <ul class="accordeon__sections">
                                         <li class="accordeon__item">
                                             <div class="accordeon__title">
@@ -131,7 +131,7 @@
                                             </div>
                                             <div class="accordeon__info">
                                                 <div class="accordeon__avatar">
-                                                    <img src="./img/content/aphex.png" alt="avatar" class="accordeon__userpic">
+                                                    <img src="./img/content/aphex.jpg" alt="avatar" class="accordeon__userpic">
                                                 </div>
                                                 <div class="accordeon__text">
                                                     <div class="accordeon__position">Оператор</div>
@@ -151,7 +151,7 @@
                                             </div>
                                             <div class="accordeon__info">
                                                 <div class="accordeon__avatar">
-                                                    <img src="./img/content/aphex.png" alt="avatar" class="accordeon__userpic">
+                                                    <img src="./img/content/aphex.jpg" alt="avatar" class="accordeon__userpic">
                                                 </div>
                                                 <div class="accordeon__text">
                                                     <div class="accordeon__position">Оператор</div>
@@ -171,7 +171,7 @@
                                             </div>
                                             <div class="accordeon__info">
                                                 <div class="accordeon__avatar">
-                                                    <img src="./img/content/aphex.png" alt="avatar" class="accordeon__userpic">
+                                                    <img src="./img/content/aphex.jpg" alt="avatar" class="accordeon__userpic">
                                                 </div>
                                                 <div class="accordeon__text">
                                                     <div class="accordeon__position">Оператор</div>
@@ -191,7 +191,7 @@
                                             </div>
                                             <div class="accordeon__info">
                                                 <div class="accordeon__avatar">
-                                                    <img src="./img/content/aphex.png" alt="avatar" class="accordeon__userpic">
+                                                    <img src="./img/content/aphex.jpg" alt="avatar" class="accordeon__userpic">
                                                 </div>
                                                 <div class="accordeon__text">
                                                     <div class="accordeon__position">Оператор</div>
@@ -204,7 +204,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                </accordeon>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -212,69 +212,64 @@
             </section>
             <section class="section section__menu">
                 <div class="menu">
-                    <div class="container">
-                        <h2 class="section__title section__title-menu">МЕНЮ</h2>
-                        <accordeon class="accordeon-menu">
-                            <ul class="accordeon-menu__sections">
-                                <li class="accordeon-menu__item accordeon-menu__item_active">
-                                    <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-meat.png')">
-                                        <span class="accordeon-menu__trigger-text">ДЛЯ МЯСОЕДОВ</span>
-                                    </a>
-                                    <div class="accordeon-menu__text">
-                                        <div class="accordeon-menu__desk">
-                                            <p>
-                                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
-                                                Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
-                                                особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-                                                Модальность высказывания, как справедливо считает И.Гальперин, пространственно
-                                                выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту
-                                                тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
-                                                субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко
-                                                относиться к слову.
-                                            </p>
-                                        </div>
+                    <h2 class="section__title section__title-menu">МЕНЮ</h2>
+                    <div class="accordeon-menu">
+                        <ul class="accordeon-menu__sections">
+                            <li class="accordeon-menu__item">
+                                <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-meat.png')">
+                                    <span class="accordeon-menu__trigger-text">ДЛЯ МЯСОЕДОВ</span>
+                                </a>
+                                <div class="accordeon-menu__text">
+                                    <div class="accordeon-menu__desk">
+                                        <p>
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                            Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
+                                            чутко относиться к слову, однако механизм сочленений неустойчив. Модальность
+                                            высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                            редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                            анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                        </p>
                                     </div>
-                                </li>
-                                <li class="accordeon-menu__item">
-                                    <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-vegan.png')">
-                                        <span class="accordeon-menu__trigger-text">ВЕГЕТАРИАНСКОЕ</span>
-                                    </a>
-                                    <div class="accordeon-menu__text">
-                                        <div class="accordeon-menu__desk">
-                                            <p>
-                                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
-                                                Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
-                                                особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-                                                Модальность высказывания, как справедливо считает И.Гальперин, пространственно
-                                                выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту
-                                                тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
-                                                субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко
-                                                относиться к слову.
-                                            </p>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="accordeon-menu__item">
+                                <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-vegan.png')">
+                                    <span class="accordeon-menu__trigger-text">ВЕГЕТАРИАНСКОЕ</span>
+                                </a>
+                                <div class="accordeon-menu__text">
+                                    <div class="accordeon-menu__desk">
+                                        <p>
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                            Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
+                                            чутко относиться к слову, однако механизм сочленений неустойчив. Модальность
+                                            высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                            редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                            анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                        </p>
                                     </div>
-                                </li>
-                                <li class="accordeon-menu__item">
-                                    <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-diet.png')">
-                                        <span class="accordeon-menu__trigger-text">ДИЕТИЧЕСКОЕ</span>
-                                    </a>
-                                    <div class="accordeon-menu__text">
-                                        <div class="accordeon-menu__desk">
-                                            <p>
-                                                Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
-                                                Лирический субъект начинает диссонансный анжамбеман. Наш современник стал
-                                                особенно чутко относиться к слову, однако механизм сочленений неустойчив.
-                                                Модальность высказывания, как справедливо считает И.Гальперин, пространственно
-                                                выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту
-                                                тему, заимствование редуцирует конструктивный механизм сочленений. Лирический
-                                                субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко
-                                                относиться к слову.
-                                            </p>
-                                        </div>
+                                </div>
+                            </li>
+                            <li class="accordeon-menu__item">
+                                <a href="#" class="accordeon-menu__trigger" style="background-image: url('img/content/menu-diet.png')">
+                                    <span class="accordeon-menu__trigger-text">ДИЕТИЧЕСКОЕ</span>
+                                </a>
+                                <div class="accordeon-menu__text">
+                                    <div class="accordeon-menu__desk">
+                                        <p>
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.
+                                            Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно
+                                            чутко относиться к слову, однако механизм сочленений неустойчив. Модальность
+                                            высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                                            Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                            редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                            анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                        </p>
                                     </div>
-                                </li>
-                            </ul>
-                        </accordeon>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>

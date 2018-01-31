@@ -144,6 +144,17 @@
 .start__img, .start__description {
     flex-basis: 50%;
     display: flex;
+    
+    @include tablets {
+        justify-content: center;
+    }
+}
+
+.start__burger {
+    @include tablets {
+        width: 75%;
+        height: 100%;
+    }
 }
 
 .start__description {
@@ -158,6 +169,11 @@
     font-weight: 300;
     line-height: 1.42;
     margin: 0;
+
+    @include tablets {
+        font-size: rem(56px);
+        text-align: center;
+    }
 }
 
 .start__description-text {
@@ -166,6 +182,11 @@
     font-size: rem(65px);
     line-height: 1.42;
     width: rem(415px);
+
+    @include tablets {
+        font-size: rem(49px);
+        text-align: center;
+    }
 }
 
 .control {

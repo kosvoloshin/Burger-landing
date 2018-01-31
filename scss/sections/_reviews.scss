@@ -21,6 +21,11 @@
     &:hover .reviews__info {
         display: block;
     }
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }
 
 .reviews__img {
@@ -77,6 +82,11 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.6);
     padding: rem(50px) rem(20px);
+
+    @include tablets {
+        padding: 0;
+        text-align: center;
+    }
 }
 
 .reviews__name {
@@ -87,6 +97,12 @@
     font-size: rem(14px);
     font-weight: normal;
     text-decoration: none;
+
+    @include tablets {
+        margin: 0 auto;
+        padding-top: 5px;
+        font-size: rem(12px);
+    }
 }
 
 .reviews__message {
@@ -99,6 +115,12 @@
     font-weight: normal;
     line-height: 1.42;
     text-decoration: none;
+
+    @include tablets {
+        margin: 0 auto;
+        font-size: rem(12px);
+        height: rem(102px);
+    }
 }
 
 .review__btn {
@@ -117,5 +139,10 @@
     &:hover {
         cursor: pointer;
         transition: 1.5s;
+        background-color: darken($dark, 10%);
+    }
+
+    @include tablets {
+        margin: 0 auto;
     }
 }

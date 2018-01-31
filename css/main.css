@@ -359,6 +359,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .start__img, .start__description {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+@media screen and (max-width: 768px) {
+  .start__burger {
+    width: 75%;
+    height: 100%; } }
 
 .start__description {
   -webkit-box-orient: vertical;
@@ -376,6 +386,10 @@ ul {
   font-weight: 300;
   line-height: 1.42;
   margin: 0; }
+  @media screen and (max-width: 768px) {
+    .section__title {
+      font-size: 3.5rem;
+      text-align: center; } }
 
 .start__description-text {
   color: #ffffff;
@@ -383,6 +397,10 @@ ul {
   font-size: 4.0625rem;
   line-height: 1.42;
   width: 25.9375rem; }
+  @media screen and (max-width: 768px) {
+    .start__description-text {
+      font-size: 3.0625rem;
+      text-align: center; } }
 
 .control {
   position: absolute;
@@ -407,12 +425,27 @@ ul {
   color: #2f3234;
   padding-bottom: 2.5rem; }
 
+@media screen and (max-width: 768px) {
+  .best__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
+
 .best__item {
   width: 18.75rem;
   height: 18.75rem;
   display: inline-block;
   vertical-align: top;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .best__item {
+      width: 25%; } }
 
 .best__title {
   font-family: 'lifehackmedium';
@@ -453,14 +486,32 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .team__content {
+      width: 100%;
+      padding-top: 0;
+      padding-left: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .team__info {
   height: 29.375rem;
   width: 70%; }
+  @media screen and (max-width: 768px) {
+    .team__info {
+      margin: 0 auto;
+      text-align: center; } }
 
 .accordeon-team {
   height: 20.625rem;
   width: 23.75rem; }
+  @media screen and (max-width: 768px) {
+    .accordeon-team {
+      margin: 0 auto; } }
 
 .accordeon__item_active {
   width: 23.625rem;
@@ -512,7 +563,18 @@ ul {
 .accordeon__avatar {
   display: inline-block;
   vertical-align: top;
-  padding-left: 0.625rem; }
+  height: 6.25rem;
+  width: 6.25rem;
+  border-radius: 50%;
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .accordeon__avatar {
+      display: block;
+      margin: 0 auto; } }
+
+.accordeon__userpic {
+  width: 100%;
+  height: 100%; }
 
 .accordeon__text {
   width: 15rem;
@@ -526,6 +588,12 @@ ul {
   display: inline-block;
   vertical-align: top;
   padding-left: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .accordeon__text {
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+      width: 16rem; } }
 
 .accordeon__position {
   font-weight: 500;
@@ -547,14 +615,26 @@ ul {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 100%; }
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .accordeon-menu__sections {
   height: 100%;
-  font-size: 0; }
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .accordeon-menu__item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100%; }
 
 .accordeon-menu__trigger {
@@ -643,6 +723,10 @@ ul {
   position: relative; }
   .reviews__item:hover .reviews__info {
     display: block; }
+  @media screen and (max-width: 768px) {
+    .reviews__item {
+      width: 50%;
+      height: 25%; } }
 
 .reviews__img {
   height: 100%;
@@ -690,6 +774,10 @@ ul {
   display: none;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 3.125rem 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .reviews__info {
+      padding: 0;
+      text-align: center; } }
 
 .reviews__name {
   width: 14.375rem;
@@ -699,6 +787,11 @@ ul {
   font-size: 0.875rem;
   font-weight: normal;
   text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .reviews__name {
+      margin: 0 auto;
+      padding-top: 5px;
+      font-size: 0.75rem; } }
 
 .reviews__message {
   width: 14.375rem;
@@ -710,6 +803,11 @@ ul {
   font-weight: normal;
   line-height: 1.42;
   text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .reviews__message {
+      margin: 0 auto;
+      font-size: 0.75rem;
+      height: 6.375rem; } }
 
 .review__btn {
   width: 6.875rem;
@@ -728,7 +826,11 @@ ul {
     cursor: pointer;
     -webkit-transition: 1.5s;
     -o-transition: 1.5s;
-    transition: 1.5s; }
+    transition: 1.5s;
+    background-color: #171819; }
+  @media screen and (max-width: 768px) {
+    .review__btn {
+      margin: 0 auto; } }
 
 .section__order {
   background-image: url(../img/bg/bg-order.jpg);
@@ -745,6 +847,19 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 75%; } }
 
 .form__column {
   display: -webkit-box;
@@ -757,6 +872,11 @@ ul {
   width: 50%; }
   .form__column:last-child {
     margin-left: 1.25rem; }
+  @media screen and (max-width: 768px) {
+    .form__column {
+      width: 45%; }
+      .form__column:last-child {
+        margin-left: 0; } }
 
 .form__row {
   margin-bottom: 1.25rem;
@@ -897,6 +1017,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .footer__content {
+      width: 100%; } }
 
 .footer__contacts {
   display: -webkit-box;
@@ -911,6 +1034,9 @@ ul {
   justify-content: center;
   width: 50%;
   padding-top: 0.5rem; }
+  @media screen and (max-width: 768px) {
+    .footer__contacts {
+      margin-left: 1.5rem; } }
 
 .footer__address {
   font-family: 'ubuntu';
@@ -946,6 +1072,9 @@ ul {
   align-items: flex-end;
   width: 50%;
   padding-top: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .footer__socials {
+      margin-right: 1.5rem; } }
 
 .footer__socials-list {
   height: 100%; }

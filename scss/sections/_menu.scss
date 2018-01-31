@@ -17,15 +17,18 @@
     right: 0;
     bottom: 0;
     height: 100%;
+    display: flex;
 }
 
 .accordeon-menu__sections {
     height: 100%;
     font-size: 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .accordeon-menu__item {
-    display: inline-block;
+    display: flex;
     height: 100%;
 }
 
