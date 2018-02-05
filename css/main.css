@@ -217,6 +217,94 @@ ul {
   margin: 0 auto;
   position: relative; }
 
+.tablets {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .tablets {
+      display: none;
+      background-color: #2f3234;
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 10000;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+.tablets__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tablets__header-close {
+  margin: 1.875rem; }
+
+.tablets__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__list-tabl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav__item-tabl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  white-space: nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav__item-tabl:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: ' ';
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 0.15625rem;
+    background-color: #fff;
+    margin-top: 1.8125rem;
+    margin-bottom: 1.8125rem; }
+  .nav__item-tabl:last-child:after {
+    display: none; }
+
+.nav__link-tabl {
+  color: #ffffff;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .nav__link-tabl:hover {
+    text-decoration: underline; }
+
 .header {
   width: 100%;
   display: -webkit-box;
@@ -282,8 +370,8 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 30px;
-  margin-right: 31px;
+  margin-left: 1.875rem;
+  margin-right: 1.9375rem;
   display: none; }
   @media screen and (max-width: 768px) {
     .header__menu-tablets {
@@ -356,19 +444,33 @@ ul {
 .start__img, .start__description {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
+  -webkit-box-flex: 1; }
   @media screen and (max-width: 768px) {
     .start__img, .start__description {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      -webkit-box-flex: initial;
+      -ms-flex: initial;
+      flex: initial; } }
 
-@media screen and (max-width: 768px) {
-  .start__burger {
-    width: 75%;
-    height: 100%; } }
+.start__burger {
+  max-width: 100%;
+  height: auto; }
+  @media screen and (max-width: 768px) {
+    .start__burger {
+      width: 75%;
+      height: 100%; } }
 
 .start__description {
   -webkit-box-orient: vertical;
@@ -425,20 +527,26 @@ ul {
   color: #2f3234;
   padding-bottom: 2.5rem; }
 
-@media screen and (max-width: 768px) {
-  .best__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; } }
+.best__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  @media screen and (max-width: 768px) {
+    .best__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
 
 .best__item {
-  width: 18.75rem;
+  width: 30%;
   height: 18.75rem;
   display: inline-block;
   vertical-align: top;

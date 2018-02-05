@@ -15,6 +15,73 @@
     position: relative;
 }
 
+.tablets {
+    display: none;
+
+    @include tablets {
+        display: none;
+        background-color: $dark;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 10000;
+        flex-direction: column;
+    }
+}
+
+.tablets__header {
+    display: flex;
+}
+
+.tablets__header-close {
+    margin: rem(30px);
+}
+
+.tablets__menu {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__list-tabl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav__item-tabl {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    align-items: center;
+    &:after {
+        display: flex;
+        content: ' ';
+        @include circle(rem(5px), #fff);
+        margin-top: rem(29px);
+        margin-bottom: rem(29px);
+    }
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.nav__link-tabl {
+    color: #ffffff;
+    font-family: 'ubuntu';
+    font-size: rem(14px);
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase; 
+    text-decoration: none;
+    transition: .5s;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .header {
     width: 100%;
     display: flex;
@@ -78,8 +145,8 @@
     position: relative;
     height: rem(22px);
     align-items: center;
-    margin-left: 30px;
-    margin-right: 31px;
+    margin-left: rem(30px);
+    margin-right: rem(31px);
     display: none;
 
     @include tablets {
@@ -143,14 +210,22 @@
 
 .start__img, .start__description {
     flex-basis: 50%;
-    display: flex;
+    flex: 1 1 100px;
+    -webkit-box-flex: 1;
     
     @include tablets {
         justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-basis: auto;
+        flex: initial;
     }
 }
 
 .start__burger {
+    max-width: 100%;
+    height: auto;
+
     @include tablets {
         width: 75%;
         height: 100%;

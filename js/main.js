@@ -1,3 +1,20 @@
+// order tablets
+
+var order = document.querySelector('#order');
+var tablets = document.querySelector('#tablets');
+
+
+order.addEventListener('click', function () {
+    tablets.style.display = 'flex';
+})
+
+var close = document.querySelector('#close');
+var tablets = document.querySelector('#tablets');
+
+close.addEventListener('click', function () {
+    tablets.style.display = 'none';
+})
+
 // map
 
 function initMap() {
