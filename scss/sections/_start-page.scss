@@ -212,6 +212,7 @@
     flex-basis: 50%;
     flex: 1 1 100px;
     -webkit-box-flex: 1;
+    margin-right: rem(20px);
     
     @include tablets {
         justify-content: center;
