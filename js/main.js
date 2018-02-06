@@ -1,4 +1,4 @@
-// order tablets
+// order tablets menu
 
 var order = document.querySelector('#order');
 var tablets = document.querySelector('#tablets');
