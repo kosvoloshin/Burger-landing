@@ -129,13 +129,22 @@
     background-color: #fff;
 }
 
+.form__check:checked + .form__check-fake:after{
+    content: "\2714";
+    font-size: rem(20px);
+    color: $orange;
+    position: absolute;
+    top: rem(-3px);
+    left: rem(3px);
+}
+
 .form__title-text {
     display: inline-block;
     font-family: 'ubuntu';
     font-size: rem(14px);
     font-weight: 300;
     text-decoration: none;
-    padding-bottom: rem(5px);
+    vertical-align: middle;
 }
 
 .form__btn-order {
@@ -146,10 +155,11 @@
     text-decoration: none;
     font-family: 'ubuntu';
     font-size: rem(13px);
-    font-weight: 300;
-    line-height: 1.42;
+    font-weight: 400;
     text-transform: uppercase;
     transition: .5s;
+    border: initial;
+    cursor: pointer;
     &:hover {
         background-color: darken($orange, 10%);
     }
@@ -162,6 +172,8 @@
     text-decoration: none;
     font-family: 'ubuntu';
     font-size: rem(13px);
-    font-weight: 300;
-    line-height: 1.42;
+    font-weight: 400;
+    border: initial;
+    cursor: pointer;
+    background: none;
 }

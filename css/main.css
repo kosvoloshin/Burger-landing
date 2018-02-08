@@ -641,15 +641,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: .9;
-  -ms-flex: .9;
-  flex: .9;
+  -webkit-box-flex: .98;
+  -ms-flex: .98;
+  flex: .98;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .slider__img {
   -ms-flex: 1 1 100px;
@@ -667,7 +668,8 @@ ul {
   background-color: #f08c33;
   border-radius: 5px;
   position: absolute;
-  top: -5.3125rem;
+  top: 5.625rem;
+  left: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -680,7 +682,16 @@ ul {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  z-index: 1; }
+  .slider__composition:hover {
+    background-color: #d4441d; }
+    .slider__composition:hover:hover .slider__composition-prod {
+      display: block; }
 
 .slider__composition-burger {
   height: 2.625rem;
@@ -693,10 +704,73 @@ ul {
   font-size: 0.875rem;
   font-weight: 300; }
 
+.slider__composition-prod {
+  height: 20.75rem;
+  width: 16.875rem;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 5.625rem;
+  z-index: 1;
+  display: none; }
+
+.slider__composition-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 100%; }
+
+.slider__composition-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 1.25rem; }
+
+.slider__composition-icon {
+  height: 2.3125rem;
+  width: 2.625rem; }
+
+.slider__composition-desk {
+  color: #2f3234;
+  font-family: 'ubuntu';
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 75%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 1.25rem; }
+
 .slider__calories {
   height: 5rem;
   width: 4.0625rem;
-  position: absolute; }
+  position: absolute;
+  bottom: 6.5625rem;
+  left: 2.1875rem; }
 
 .slider__calories-kkal {
   height: 3.75rem;
@@ -898,19 +972,18 @@ ul {
 
 .accordeon__avatar {
   display: inline-block;
-  vertical-align: top;
   height: 6.25rem;
   width: 6.25rem;
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
   @media screen and (max-width: 768px) {
     .accordeon__avatar {
       display: block;
       margin: 0 auto; } }
-
-.accordeon__userpic {
-  width: 100%;
-  height: 100%; }
 
 .accordeon__text {
   width: 15rem;
@@ -1296,13 +1369,21 @@ ul {
   border-radius: 0.0625rem;
   background-color: #fff; }
 
+.form__check:checked + .form__check-fake:after {
+  content: "\2714";
+  font-size: 1.25rem;
+  color: #e25028;
+  position: absolute;
+  top: -0.1875rem;
+  left: 0.1875rem; }
+
 .form__title-text {
   display: inline-block;
   font-family: 'ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
   text-decoration: none;
-  padding-bottom: 0.3125rem; }
+  vertical-align: middle; }
 
 .form__btn-order {
   padding: 0.625rem 1.0625rem;
@@ -1312,12 +1393,13 @@ ul {
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
-  font-weight: 300;
-  line-height: 1.42;
+  font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: .5s;
   -o-transition: .5s;
-  transition: .5s; }
+  transition: .5s;
+  border: initial;
+  cursor: pointer; }
   .form__btn-order:hover {
     background-color: #bd3d1a; }
 
@@ -1328,8 +1410,10 @@ ul {
   text-decoration: none;
   font-family: 'ubuntu';
   font-size: 0.8125rem;
-  font-weight: 300;
-  line-height: 1.42; }
+  font-weight: 400;
+  border: initial;
+  cursor: pointer;
+  background: none; }
 
 .section__contacts {
   background-repeat: no-repeat;
