@@ -147,3 +147,79 @@
         margin: 0 auto;
     }
 }
+
+.reviews__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 49, 51, 0.9);
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+}
+
+.reviews__modal-container {
+    height: rem(254px);
+    width: rem(460px);
+    background: #fff;
+    border-radius: rem(5px);
+    position: relative;
+    padding: rem(30px) rem(20px);
+}
+
+.reviews__modal-name {
+    font-family: 'gagalinregular';
+    font-size: rem(14px);
+    font-weight: normal;
+    text-decoration: none; 
+    margin-bottom: rem(20px);
+}
+
+.reviews__modal-message {
+    font-family: 'ubuntu';
+    font-size: rem(14px);
+    font-weight: 400;
+    text-decoration: none; 
+    line-height: 1.6;
+}
+
+.reviews__modal-close {
+    position: absolute;
+    top: rem(20px);
+    right: rem(20px);
+    cursor: pointer;
+}
+
+/*.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 49, 51, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.overlay__container {
+    position: relative;
+}
+
+.overlay__close {
+    position: absolute;
+    
+}
+
+.overlay__content {
+    height: rem(254px);
+    width: rem(460px);
+    background: #fff;
+    border-radius: rem(5px);
+}*/
+

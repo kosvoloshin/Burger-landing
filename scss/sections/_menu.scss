@@ -42,23 +42,19 @@
     text-decoration: none;
     position: relative;
     float: left;
+    border: none;
+    cursor: pointer;
 }
 
-.accordeon-menu__item_active {
+.accordeon-menu__item:active,
+.accordeon-menu__item:visited,
+.accordeon-menu__item:hover,
+.accordeon-menu__item:focus {
     position: relative;
-
-        .accordeon-menu__text {
-            width: rem(540px);
-            overflow: hidden;
-        }
-
-        .accordeon-menu__desk {
-            width: 100%;
-            height: 100%;
-        }
 
         .accordeon-menu__trigger-text {
             color: $yellow;
+            transition: 0.5s;
         }
 }
 
@@ -79,11 +75,12 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(49, 52, 54, 0.9);
+    transition: width 0.4s;
 }
 
 .accordeon-menu__desk {
     height: 100%;
-    width: 100%;
+    width: rem(540px);
     font-family: 'ubuntu';
     font-size: rem(14px);
     font-weight: 300;

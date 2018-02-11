@@ -15,6 +15,196 @@ close.addEventListener('click', function () {
     tablets.style.display = 'none';
 })
 
+// slider
+
+var left = document.querySelector("#left");
+var right = document.querySelector("#right");
+var sliderList = document.querySelector('.slider__list');
+var sliderContainer = document.querySelector('.slider__content');
+var size = parseInt(getComputedStyle(sliderContainer).width);
+var start = 1;
+
+left.addEventListener('click', function (e) {
+    e.preventDefault();
+    var currentLeft = (parseInt(getComputedStyle(sliderList).left));
+ 
+    if (start > 1 && currentLeft % size == 0) {        
+      sliderList.style.left = currentLeft + size + 'px';
+      start--;      
+      
+    } else if (currentLeft % size == 0) {
+      sliderList.style.left = currentLeft - 4 * size + 'px';
+      start = 5;      
+    }
+ })
+
+ right.addEventListener('click', function (e) {
+    e.preventDefault();
+    var currentLeft = (parseInt(getComputedStyle(sliderList).left));
+
+    if (start < 5 && currentLeft % size == 0) {
+
+        sliderList.style.left = currentLeft - size + 'px';
+        start++;
+    
+    } else if (currentLeft % size == 0) {
+      sliderList.style.left = 0 + 'px';
+      start = 1;     
+    }
+})
+
+window.addEventListener('resize', function() {  
+    size = parseInt(getComputedStyle(sliderContainer).width); 
+    // console.log("size: " + size);
+    // console.log("start: " + start);
+    // console.log(-size * start);
+    sliderList.style.left = -size * (start-1) + 'px';
+  });
+
+// acco team
+
+var accordeon = document.getElementById('acco-team'),
+    items = accordeon.getElementsByClassName('accordeon__item'),
+    contents = accordeon.getElementsByClassName('accordeon__info'),
+    i;
+
+accordeon.addEventListener("click", function(e) {
+    if (e.target.classList.contains('accordeon__trigger')) {
+        var trigger = e.target;
+        var content = trigger.nextElementSibling;
+        var item = trigger.parentNode;
+
+        if (!item.classList.contains("active")) {
+            for (i = 0; i < items.length; i++) {
+                items[i].classList.remove("active");
+            }
+        item.classList.add("active");
+
+        for (i = 0; i < contents.length; i++) {
+            contents[i].style.height = null;
+        }
+
+        content.style.height = content.scrollHeight + "px";
+
+        } else {
+          item.classList.remove("active");
+          content.style.height = null;
+        }
+    }
+})
+
+// acco menu
+
+var accordeon2 = document.getElementById('acco-menu'),
+    items2 = accordeon2.getElementsByClassName('accordeon-menu__item'),
+    contents2 = accordeon2.getElementsByClassName('accordeon-menu__text'),
+    i;
+
+accordeon2.addEventListener("click", function(e) {
+    if (e.target.classList.contains('accordeon-menu__trigger')) {
+        var trigger = e.target;
+        var content = trigger.nextElementSibling;
+        var item = trigger.parentNode;
+
+        if (!item.classList.contains("active")) {
+            for (i = 0; i < items2.length; i++) {
+                items2[i].classList.remove("active");
+            }
+        item.classList.add("active");
+
+        for (i = 0; i < contents2.length; i++) {
+            contents2[i].style.width = null;
+        }
+
+        content.style.width = content.scrollWidth + "px";
+
+        } else {
+          item.classList.remove("active");
+          content.style.width = null;
+        }
+    }
+})
+
+//overLay
+
+var openMenu1 = document.querySelector('#openOverlay1');
+var openMenu2 = document.querySelector('#openOverlay2');
+var openMenu3 = document.querySelector('#openOverlay3');
+var openMenu4 = document.querySelector('#openOverlay4');
+var openMenu5 = document.querySelector('#openOverlay5');
+var openMenu6 = document.querySelector('#openOverlay6');
+var openMenu7 = document.querySelector('#openOverlay7');
+var openMenu8 = document.querySelector('#openOverlay8');
+var modalMenu = document.querySelector('#modal');
+
+openMenu1.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu2.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu3.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu4.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu5.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu6.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu7.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+openMenu8.addEventListener('click', function () {
+    modalMenu.style.display = 'flex';
+})
+
+var closeMenu = document.querySelector('#closeModal');
+var modalMenu = document.querySelector('#modal');
+
+closeMenu.addEventListener('click', function () {
+    modalMenu.style.display = 'none';
+})
+
+/*
+var openButton = document.querySelector("#openOverlay");
+
+    function openOverlay(content) {
+        var overlayElement = document.createElement("div");
+        overlayElement.classList.add("overlay");
+
+        var template = document.querySelector("#overlayTemplate");
+        overlayElement.innerHTML = template.innerHTML;
+
+        var closeElement = overlayElement.querySelector(".overlay__close");
+        closeElement.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.body.removeChild(overlayElement);
+        });
+
+        var contentElement = overlayElement.querySelector(".overlay__content");
+        contentElement.innerHTML = content;
+
+        return overlayElement;
+    }
+    
+    var succesOverlay = openOverlay("1234");
+
+    openButton.addEventListener("click", function () {
+        document.body.appendChild(succesOverlay);
+    });
+*/
+
 // map
 
 function initMap() {
