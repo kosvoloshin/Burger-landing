@@ -36,8 +36,6 @@
     flex-direction: row;
     margin: 0;
     height: rem(500px);
-    //justify-content: center;
-    //align-items: center;
 }
 
 .slider__content {
@@ -68,8 +66,6 @@
 }
 
 .slider__img {
-    //flex: 1 1 100px;
-    //-webkit-box-flex: 1;
     position: relative;
     overflow: hidden;
     display: flex;
