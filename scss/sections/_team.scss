@@ -50,12 +50,10 @@
     margin-bottom: rem(40px);
 }
 
-.accordeon__item:hover,
-.accordeon__item:active,
-.accordeon__item:focus {
-    position: relative;
-
+.accordeon__item.active {
+    
     .accordeon__trigger {
+        position: relative;
         color: $yellow;
         transition: 0.5s;
 

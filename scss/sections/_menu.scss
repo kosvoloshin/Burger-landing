@@ -46,10 +46,7 @@
     cursor: pointer;
 }
 
-.accordeon-menu__item:active,
-.accordeon-menu__item:visited,
-.accordeon-menu__item:hover,
-.accordeon-menu__item:focus {
+.accordeon-menu__item.active {
     position: relative;
 
         .accordeon-menu__trigger-text {

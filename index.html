@@ -7,14 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr Burger</title>
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="maincontent">
-            <section class="section section__start">
+        <div id="fullpage" class="maincontent">
+            <section class="section section__start" id="section0">
                 <div class="start">
                     <div class="container start__container">
                         <div class="tablets" id="tablets">
@@ -113,7 +114,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__best">
+            <section class="section section__best" id="section1">
                 <div class="best">
                     <div class="container">
                         <h2 class="section__title section__title--best">МЫ ЛУЧШИЕ</h2>
@@ -156,90 +157,90 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__slider">
+            <section class="section section__slider" id="section2">
                 <div class="slider">
                     <div class="slider__arrow-left">
                         <a href="#" class="slider__left" id="left">
-                            <svg class="triangle__left">
+                            <svg class="slider__triangle-left">
                                 <use xlink:href="img/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
                     </div>
                     <div class="container slider__container">
                         <div class="slider__content">
-                            <div class="slider__composition">
-                                <svg class="slider__composition-burger">
-                                    <use xlink:href="img/sprite.svg#burger"></use>
-                                </svg>
-                                <div class="slider__composition-text">СОСТАВ</div>
-                                <div class="slider__composition-prod">
-                                    <ul class="slider__composition-list">
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #e25028">
-                                                <use xlink:href="img/sprite.svg#beef"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Говядина</span>
-                                                <span class="slider__composition1">300г</span>
-                                            </div>
-                                        </li>
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #f8b43a">
-                                                <use xlink:href="img/sprite.svg#buns"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Булочки</span>
-                                                <span class="slider__composition1">100г</span>
-                                            </div>
-                                        </li>
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #8ac03e">
-                                                <use xlink:href="img/sprite.svg#salad"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Зелень</span>
-                                                <span class="slider__composition1">70г</span>
-                                            </div>
-                                        </li>
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #e25028">
-                                                <use xlink:href="img/sprite.svg#sauce"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Соус</span>
-                                                <span class="slider__composition1">150г</span>
-                                            </div>
-                                        </li>
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #8ac03e">
-                                                <use xlink:href="img/sprite.svg#cucumber"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Овощи</span>
-                                                <span class="slider__composition1">200г</span>
-                                            </div>
-                                        </li>
-                                        <li class="slider__composition-item">
-                                            <svg class="slider__composition-icon" style="fill: #f8b43a">
-                                                <use xlink:href="img/sprite.svg#cheese"></use>
-                                            </svg>
-                                            <div class="slider__composition-desk">
-                                                <span class="slider__composition1">Сыр</span>
-                                                <span class="slider__composition1">80г</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="slider__calories">
-                                <svg class="slider__calories-kkal">
-                                    <use xlink:href="img/sprite.svg#kkal"></use>
-                                </svg>
-                                <div class="slider__calories-n">1200</div>
-                                <div class="slider__calories-k">ККАЛ</div>
-                            </div>
                             <ul id="items" class="slider__list">
                                 <li class="slider__item">
+                                    <div class="slider__composition">
+                                        <svg class="slider__composition-burger">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="slider__composition-text">СОСТАВ</div>
+                                        <div class="slider__composition-prod">
+                                            <ul class="slider__composition-list">
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Говядина</span>
+                                                        <span class="slider__composition1">300г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Булочки</span>
+                                                        <span class="slider__composition1">100г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Зелень</span>
+                                                        <span class="slider__composition1">70г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Соус</span>
+                                                        <span class="slider__composition1">150г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Овощи</span>
+                                                        <span class="slider__composition1">200г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Сыр</span>
+                                                        <span class="slider__composition1">80г</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories">
+                                        <svg class="slider__calories-kkal">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="slider__calories-n">1200</div>
+                                        <div class="slider__calories-k">ККАЛ</div>
+                                    </div>
                                     <div class="slider__img">
                                         <img src="./img/content/chiken-burger.png" alt="chiken-burger" class="slider__burger">
                                     </div>
@@ -259,6 +260,77 @@
                                     </div>
                                 </li>
                                 <li class="slider__item">
+                                    <div class="slider__composition">
+                                        <svg class="slider__composition-burger">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="slider__composition-text">СОСТАВ</div>
+                                        <div class="slider__composition-prod">
+                                            <ul class="slider__composition-list">
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Говядина</span>
+                                                        <span class="slider__composition1">300г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Булочки</span>
+                                                        <span class="slider__composition1">100г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Зелень</span>
+                                                        <span class="slider__composition1">70г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Соус</span>
+                                                        <span class="slider__composition1">150г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Овощи</span>
+                                                        <span class="slider__composition1">200г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Сыр</span>
+                                                        <span class="slider__composition1">80г</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories">
+                                        <svg class="slider__calories-kkal">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="slider__calories-n">1200</div>
+                                        <div class="slider__calories-k">ККАЛ</div>
+                                    </div>
                                     <div class="slider__img">
                                         <img src="./img/content/nyc-diner-bacon-cheeseburger.png" alt="bacon-cheeseburger" class="slider__burger">
                                     </div>
@@ -278,6 +350,77 @@
                                     </div>
                                 </li>
                                 <li class="slider__item">
+                                    <div class="slider__composition">
+                                        <svg class="slider__composition-burger">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="slider__composition-text">СОСТАВ</div>
+                                        <div class="slider__composition-prod">
+                                            <ul class="slider__composition-list">
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Говядина</span>
+                                                        <span class="slider__composition1">300г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Булочки</span>
+                                                        <span class="slider__composition1">100г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Зелень</span>
+                                                        <span class="slider__composition1">70г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Соус</span>
+                                                        <span class="slider__composition1">150г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Овощи</span>
+                                                        <span class="slider__composition1">200г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Сыр</span>
+                                                        <span class="slider__composition1">80г</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories">
+                                        <svg class="slider__calories-kkal">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="slider__calories-n">1200</div>
+                                        <div class="slider__calories-k">ККАЛ</div>
+                                    </div>
                                     <div class="slider__img">
                                         <img src="./img/content/spicy-shrimp-surger.png" alt="spicy-burger" class="slider__burger">
                                     </div>
@@ -297,6 +440,77 @@
                                     </div>
                                 </li>
                                 <li class="slider__item">
+                                    <div class="slider__composition">
+                                        <svg class="slider__composition-burger">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="slider__composition-text">СОСТАВ</div>
+                                        <div class="slider__composition-prod">
+                                            <ul class="slider__composition-list">
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Говядина</span>
+                                                        <span class="slider__composition1">300г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Булочки</span>
+                                                        <span class="slider__composition1">100г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Зелень</span>
+                                                        <span class="slider__composition1">70г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Соус</span>
+                                                        <span class="slider__composition1">150г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Овощи</span>
+                                                        <span class="slider__composition1">200г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Сыр</span>
+                                                        <span class="slider__composition1">80г</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories">
+                                        <svg class="slider__calories-kkal">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="slider__calories-n">1200</div>
+                                        <div class="slider__calories-k">ККАЛ</div>
+                                    </div>
                                     <div class="slider__img">
                                         <img src="./img/content/black-burger.png" alt="black-burger" class="slider__burger">
                                     </div>
@@ -316,6 +530,77 @@
                                     </div>
                                 </li>
                                 <li class="slider__item">
+                                    <div class="slider__composition">
+                                        <svg class="slider__composition-burger">
+                                            <use xlink:href="img/sprite.svg#burger"></use>
+                                        </svg>
+                                        <div class="slider__composition-text">СОСТАВ</div>
+                                        <div class="slider__composition-prod">
+                                            <ul class="slider__composition-list">
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#beef"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Говядина</span>
+                                                        <span class="slider__composition1">300г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#buns"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Булочки</span>
+                                                        <span class="slider__composition1">100г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#salad"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Зелень</span>
+                                                        <span class="slider__composition1">70г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #e25028">
+                                                        <use xlink:href="img/sprite.svg#sauce"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Соус</span>
+                                                        <span class="slider__composition1">150г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #8ac03e">
+                                                        <use xlink:href="img/sprite.svg#cucumber"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Овощи</span>
+                                                        <span class="slider__composition1">200г</span>
+                                                    </div>
+                                                </li>
+                                                <li class="slider__composition-item">
+                                                    <svg class="slider__composition-icon" style="fill: #f8b43a">
+                                                        <use xlink:href="img/sprite.svg#cheese"></use>
+                                                    </svg>
+                                                    <div class="slider__composition-desk">
+                                                        <span class="slider__composition1">Сыр</span>
+                                                        <span class="slider__composition1">80г</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slider__calories">
+                                        <svg class="slider__calories-kkal">
+                                            <use xlink:href="img/sprite.svg#kkal"></use>
+                                        </svg>
+                                        <div class="slider__calories-n">1200</div>
+                                        <div class="slider__calories-k">ККАЛ</div>
+                                    </div>
                                     <div class="slider__img">
                                         <img src="./img/content/burger-sandwich.png" alt="burger-sandwich" class="slider__burger">
                                     </div>
@@ -339,14 +624,14 @@
                     </div>
                     <div class="slider__arrow-right">
                         <a href="#" class="slider__right" id="right">
-                            <svg class="triangle__right">
+                            <svg class="slider__triangle-right">
                                 <use xlink:href="img/sprite.svg#arrow-scroll"></use>
                             </svg>
                         </a>
                     </div>
                 </div>
             </section>
-            <section class="section section__team">
+            <section class="section section__team" id="section3">
                 <div class="team">
                     <div class="container">
                         <div class="team__content">
@@ -417,7 +702,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__menu">
+            <section class="section section__menu" id="section4">
                 <div class="menu">
                     <h2 class="section__title section__title-menu">МЕНЮ</h2>
                     <div id="acco-menu" class="accordeon-menu">
@@ -480,7 +765,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__reviews">
+            <section class="section section__reviews" id="section5">
                 <h2 class="section__title section__title-reviews visuallyhidden">ОТЗЫВЫ</h2>
                 <div class="reviews">
                     <ul class="reviews__list">
@@ -600,7 +885,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section__order">
+            <section class="section section__order" id="section6">
                 <div class="container">
                     <h2 class="section__title section__title-order">ЗАКАЖИТЕ ДОСТАВКУ</h2>
                     <form action="" class="form">
@@ -678,7 +963,7 @@
                     </form>
                 </div>
             </section>
-            <section class="section section__contacts">
+            <section class="section section__contacts" id="section7">
                 <div class="container contacts__container">
                     <h2 class="section__title section__title-contacts visuallyhidden">КАРТА</h2>
                     <div id="map" class="map"></div>
@@ -698,24 +983,32 @@
                             <div class="footer__socials">
                                 <ul class="footer__socials-list">
                                     <li class="footer__socials-item">
-                                        <svg class="icon">
-                                            <use xlink:href="img/sprite.svg#vk"></use>
-                                        </svg>
+                                        <a href="https://www.vk.com/" class="footer__socials-link">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="footer__socials-item">
-                                        <svg class="icon">
-                                            <use xlink:href="img/sprite.svg#fb"></use>
-                                        </svg>
+                                        <a href="https://www.facebook.com/" class="footer__socials-link">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#fb"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="footer__socials-item">
-                                        <svg class="icon">
-                                            <use xlink:href="img/sprite.svg#inst"></use>
-                                        </svg>
+                                        <a href="https://www.instagram.com/" class="footer__socials-link">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                     <li class="footer__socials-item">
-                                        <svg class="icon">
-                                            <use xlink:href="img/sprite.svg#twitter"></use>
-                                        </svg>
+                                        <a href="https://www.twitter.com/" class="footer__socials-link">
+                                            <svg class="icon">
+                                                <use xlink:href="img/sprite.svg#twitter"></use>
+                                            </svg>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -726,33 +1019,36 @@
         </div>
     </div>
     <nav class="nav-section">
-        <ul class="nav__sidebar">
-            <li class="sidebar__item">
-                <a href="0" class="sidebar__link"></a>
+        <ul id="myMenu" class="nav__sidebar">
+            <li data-menuanchor="section0" class="sidebar__item">
+                <a href="#section0" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="1" class="sidebar__link"></a>
+            <li data-menuanchor="section1" class="sidebar__item">
+                <a href="#section1" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="2" class="sidebar__link"></a>
+            <li data-menuanchor="section2" class="sidebar__item">
+                <a href="#section2" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="3" class="sidebar__link"></a>
+            <li data-menuanchor="section3" class="sidebar__item">
+                <a href="#section3" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="4" class="sidebar__link"></a>
+            <li data-menuanchor="section4" class="sidebar__item">
+                <a href="#section4" class="sidebar__link"></a>
+            </l>
+            <li data-menuanchor="section5" class="sidebar__item">
+                <a href="#section5" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="5" class="sidebar__link"></a>
+            <li data-menuanchor="section6" class="sidebar__item">
+                <a href="#section6" class="sidebar__link"></a>
             </li>
-            <li class="sidebar__item">
-                <a href="6" class="sidebar__link"></a>
-            </li>
-            <li class="sidebar__item">
-                <a href="7" class="sidebar__link"></a>
+            <li data-menuanchor="section7" class="sidebar__item">
+                <a href="#section7" class="sidebar__link"></a>
             </li>
         </ul>
     </nav>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/plugins.js"></script>
     <script src="./js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSSnh1PLje6jn6oRrP4REMAeEBGsmXU&callback=initMap">
     </script>

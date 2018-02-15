@@ -623,7 +623,7 @@ ul {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.triangle__left {
+.slider__triangle-left {
   fill: #fff;
   height: 1rem;
   width: 1.875rem; }
@@ -651,9 +651,6 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   position: relative;
   overflow: hidden; }
 
@@ -679,7 +676,8 @@ ul {
   height: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .slider__img {
   position: relative;
@@ -901,7 +899,7 @@ ul {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
-.triangle__right {
+.slider__triangle-right {
   fill: #fff;
   height: 1rem;
   width: 1.875rem; }
@@ -959,26 +957,19 @@ ul {
 .accordeon__item {
   margin-bottom: 2.5rem; }
 
-.accordeon__item:hover,
-.accordeon__item:active,
-.accordeon__item:focus {
-  position: relative; }
-  .accordeon__item:hover .accordeon__trigger,
-  .accordeon__item:active .accordeon__trigger,
-  .accordeon__item:focus .accordeon__trigger {
-    color: #f8b43a;
+.accordeon__item.active .accordeon__trigger {
+  position: relative;
+  color: #f8b43a;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .accordeon__item.active .accordeon__trigger:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
-    .accordeon__item:hover .accordeon__trigger:before,
-    .accordeon__item:active .accordeon__trigger:before,
-    .accordeon__item:focus .accordeon__trigger:before {
-      -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-      transform: rotate(-180deg);
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
 
 .accordeon__trigger {
   font-family: 'gagalinregular';
@@ -1105,15 +1096,9 @@ ul {
   border: none;
   cursor: pointer; }
 
-.accordeon-menu__item:active,
-.accordeon-menu__item:visited,
-.accordeon-menu__item:hover,
-.accordeon-menu__item:focus {
+.accordeon-menu__item.active {
   position: relative; }
-  .accordeon-menu__item:active .accordeon-menu__trigger-text,
-  .accordeon-menu__item:visited .accordeon-menu__trigger-text,
-  .accordeon-menu__item:hover .accordeon-menu__trigger-text,
-  .accordeon-menu__item:focus .accordeon-menu__trigger-text {
+  .accordeon-menu__item.active .accordeon-menu__trigger-text {
     color: #f8b43a;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
