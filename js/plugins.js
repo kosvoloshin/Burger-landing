@@ -5,7 +5,7 @@ $(document).ready(function() {
 		//Навигация
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
+		anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage'],
 		navigation: false,
 		navigationPosition: 'right',
 		navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 		//Скроллинг
 		css3: true,
-		scrollingSpeed: 700,
+		scrollingSpeed: 600,
 		autoScrolling: true,
 		fitToSection: true,
 		fitToSectionDelay: 1000,
@@ -33,13 +33,14 @@ $(document).ready(function() {
 		offsetSections: false,
 		resetSliders: false,
 		fadingEffect: false,
-		normalScrollElements: '#element1, .element2',
+		normalScrollElements: '#map',
 		scrollOverflow: false,
 		scrollOverflowReset: false,
 		scrollOverflowOptions: null,
 		touchSensitivity: 15,
-		normalScrollElementTouchThreshold: 5,
+		normalScrollElementTouchThreshold: 7,
 		bigSectionsDestination: null,
+		fixedElements: '#modal',
 
 		//Доступ
 		keyboardScrolling: true,
@@ -74,9 +75,13 @@ $(document).ready(function() {
 		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
+
+	/*$('#fullpage').fullpage({
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage'],
+		menu: '#myMenu'
+	});*/
+
 });
 
-/*$('#fullpage').fullpage({
-	anchors: ['section0', 'section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7',],
-	menu: '#myMenu'
-});*/
+
+

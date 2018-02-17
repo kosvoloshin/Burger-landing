@@ -467,7 +467,10 @@ ul {
 
 .start__burger {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   @media screen and (max-width: 768px) {
     .start__burger {
       width: 75%;

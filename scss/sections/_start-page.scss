@@ -226,6 +226,7 @@
 .start__burger {
     max-width: 100%;
     height: auto;
+    display: flex;
 
     @include tablets {
         width: 75%;
