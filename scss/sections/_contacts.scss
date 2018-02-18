@@ -21,6 +21,10 @@
     width: 100%;
     //position: absolute;
     bottom: 0;
+
+    @include phones {
+        height: rem(115px);
+    }
 }
 
 .footer__content {
@@ -30,6 +34,11 @@
 
     @include tablets {
         width: 100%;
+    }
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -42,6 +51,10 @@
 
     @include tablets {
         margin-left: rem(24px);
+    }
+
+    @include phones {
+        align-items: center;
     }
 }
 
@@ -76,6 +89,10 @@
 
     @include tablets {
         margin-right: rem(24px);
+    }
+
+    @include phones {
+        padding-top: rem(5px);
     }
 }
 

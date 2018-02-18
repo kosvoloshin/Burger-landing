@@ -101,11 +101,19 @@ var accordeon2 = document.getElementById('acco-menu'),
     i;
 
 accordeon2.addEventListener("click", function(e) {
-    if (e.target.classList.contains('accordeon-menu__trigger')) {
-        var trigger = e.target;
+    if (e.target.classList.contains('accordeon-menu__trigger') || e.target.classList.contains('accordeon-menu__trigger-text')) {
+        
+        var trigger;
+    
+        if (e.target.classList.contains("accordeon-menu__trigger")) { 
+        trigger = e.target;
+        } else { 
+        trigger = e.target.parentNode;
+        }
+        
         var content = trigger.nextElementSibling;
         var item = trigger.parentNode;
-
+        
         if (!item.classList.contains("active")) {
             for (i = 0; i < items2.length; i++) {
                 items2[i].classList.remove("active");

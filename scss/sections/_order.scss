@@ -37,12 +37,25 @@
         }
         width: 45%;
     }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .form__row {
     margin-bottom: rem(20px);
     display: flex;
+    justify-content: center;
 }
+
+.form__row--phones {
+
+    @include phones {
+        text-align: center;
+    }
+}
+
 
 .form__block {
     display: block;
@@ -51,6 +64,13 @@
     
     &:last-child {
         margin-right: 0;
+    }
+}
+
+.form__block--phones {
+
+    @include phones {
+        text-align: right;
     }
 }
 

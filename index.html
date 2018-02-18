@@ -120,37 +120,43 @@
                         <h2 class="section__title section__title--best">МЫ ЛУЧШИЕ</h2>
                         <ul class="best__list">
                             <li class="best__item">
-                                <div class="item__logo">
-                                    <img src="./img/content/meat.png" alt="meat" class="item__img">
+                                <div class="best__logo">
+                                    <img src="./img/content/meat.png" alt="meat" class="best__img">
                                 </div>
-                                <div class="best__title">
-                                    100% свежее мясо
-                                </div>
-                                <div class="best__text">
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                <div class="best__desk">
+                                    <div class="best__title">
+                                        100% свежее мясо
+                                    </div>
+                                    <div class="best__text">
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+                                    </div>
                                 </div>
                             </li>
                             <li class="best__item">
                                 <div class="best__logo">
                                     <img src="./img/content/hand.png" alt="hand" class="best__img">
                                 </div>
-                                <div class="best__title">
-                                    Ручная сборка
-                                </div>
-                                <div class="best__text">
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
-                                    пафос.
+                                <div class="best__desk">
+                                    <div class="best__title">
+                                        Ручная сборка
+                                    </div>
+                                    <div class="best__text">
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский
+                                        пафос.
+                                    </div>
                                 </div>
                             </li>
                             <li class="best__item">
-                                <div class="item__logo">
-                                    <img src="./img/content/natural.png" alt="natural" class="item__img">
+                                <div class="best__logo">
+                                    <img src="./img/content/natural.png" alt="natural" class="best__img">
                                 </div>
-                                <div class="best__title">
-                                    Натуральные ингредиенты
-                                </div>
-                                <div class="best__text">
-                                    Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                <div class="best__desk">
+                                    <div class="best__title">
+                                        Натуральные ингредиенты
+                                    </div>
+                                    <div class="best__text">
+                                        Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -636,7 +642,7 @@
                     <div class="container">
                         <div class="team__content">
                             <div class="team__info">
-                                <h2 class="section__title">КОМАНДА</h2>
+                                <h2 class="section__title section__title--team">КОМАНДА</h2>
                                 <div id="acco-team" class="accordeon-team">
                                     <ul class="accordeon__sections">
                                         <li class="accordeon__item">
@@ -888,40 +894,40 @@
             <section class="section section__order" id="section6">
                 <div class="container">
                     <h2 class="section__title section__title-order">ЗАКАЖИТЕ ДОСТАВКУ</h2>
-                    <form action="" class="form">
+                    <form action="server.php" method="post" id="order-form" class="form">
                         <div class="form__column">
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Имя</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-name" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Телефон</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-phone" class="form__input" required>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Улица</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-street" class="form__input" required>
                                 </label>
                             </div>
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Дом</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-house" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Корпус</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-housing" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Квартира</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-apartment" class="form__input" required>
                                 </label>
                                 <label class="form__block">
                                     <div class="form__title">Этаж</div>
-                                    <input type="text" name="" class="form__input">
+                                    <input type="text" name="user-floor" class="form__input" required>
                                 </label>
                             </div>
                         </div>
@@ -929,24 +935,24 @@
                             <div class="form__row">
                                 <label class="form__block">
                                     <div class="form__title">Комментарий</div>
-                                    <textarea name="" cols="30" rows="5" class="form__textarea"></textarea>
+                                    <textarea name="message" cols="30" rows="5" class="form__textarea" required></textarea>
                                 </label>
                             </div>
                             <div class="form__row form__row-radio">
-                                <label class="form__block">
-                                    <input type="radio" name="yes" class="form__radio visuallyhidden">
+                                <label class="form__block form__block--phones">
+                                    <input type="radio" name="options" value="потребуется сдача" class="form__radio visuallyhidden">
                                     <div class="form__radio-fake"></div>
                                     <div class="form__title-text">Потребуется сдача</div>
                                 </label>
                                 <label class="form__block">
-                                    <input type="radio" name="yes" class="form__radio visuallyhidden">
+                                    <input type="radio" name="options" value="оплата по карте" class="form__radio visuallyhidden">
                                     <div class="form__radio-fake"></div>
                                     <div class="form__title-text">Оплата по карте</div>
                                 </label>
                             </div>
-                            <div class="form__row">
+                            <div class="form__row form__row--phones">
                                 <label class="form__block">
-                                    <input type="checkbox" name="" class="form__check visuallyhidden">
+                                    <input type="checkbox" name="dont-disturb" value="1" class="form__check visuallyhidden">
                                     <div class="form__check-fake"></div>
                                     <div class="form__title-text">Не перезванивать</div>
                                 </label>
@@ -1034,21 +1040,22 @@
             </li>
             <li data-menuanchor="fifthPage" class="sidebar__item">
                 <a href="#section4" class="sidebar__link"></a>
-            </l>
-            <li data-menuanchor="sixthPage" class="sidebar__item">
-                <a href="#section5" class="sidebar__link"></a>
-            </li>
-            <li data-menuanchor="seventhPage" class="sidebar__item">
-                <a href="#section6" class="sidebar__link"></a>
-            </li>
-            <li data-menuanchor="eighthPage" class="sidebar__item">
-                <a href="#section7" class="sidebar__link"></a>
-            </li>
+                </l>
+                <li data-menuanchor="sixthPage" class="sidebar__item">
+                    <a href="#section5" class="sidebar__link"></a>
+                </li>
+                <li data-menuanchor="seventhPage" class="sidebar__item">
+                    <a href="#section6" class="sidebar__link"></a>
+                </li>
+                <li data-menuanchor="eighthPage" class="sidebar__item">
+                    <a href="#section7" class="sidebar__link"></a>
+                </li>
         </ul>
     </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/jquery.fullpage.min.js"></script>
     <script src="./js/plugins.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSSnh1PLje6jn6oRrP4REMAeEBGsmXU&callback=initMap">
     </script>

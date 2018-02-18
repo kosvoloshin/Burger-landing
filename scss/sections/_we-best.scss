@@ -22,6 +22,11 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .best__item {
@@ -33,6 +38,28 @@
 
     @include tablets {
         width: 25%;
+    }
+
+    @include phones {
+        width: 90%;
+        display: flex;
+        height: rem(180px);
+
+    }
+}
+
+.best__logo {
+    @include phones {
+        width: 30%;
+    }
+}
+
+.best__desk {
+    @include phones {
+        text-align: left;
+        margin-left: rem(30px);
+        display: flex;
+        flex-direction: column;
     }
 }
 
