@@ -70,6 +70,7 @@ $(document).on({
   },
   touchmove: e => e.preventDefault()
 
+
   // touchstart touchend touchmove 
 });
 

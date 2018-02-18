@@ -28,6 +28,10 @@
     height: 100%;
     background-color: rgba(0,0,0,0.31);
     min-height: 650px;
+
+    @include tablets {
+        min-height: initial;
+    }
 }
 
 .order-link {
@@ -100,9 +104,9 @@
 	top: rem(90px);
 	right: rem(40px);
 
-	/*@include laptop {
+	@include laptop {
 		display: none;
-	}*/
+	}
 }
 
 .sidebar__link {
