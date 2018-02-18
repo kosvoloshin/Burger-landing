@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mr Burger</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">
+    <!--<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css">-->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 </head>
@@ -15,7 +15,7 @@
 <body>
     <div class="wrapper">
         <div id="fullpage" class="maincontent">
-            <section class="section section__start" id="section0">
+            <section class="section section__start active" id="section0">
                 <div class="start">
                     <div class="container start__container">
                         <div class="tablets" id="tablets">
@@ -1026,7 +1026,7 @@
     </div>
     <nav class="nav-section">
         <ul id="myMenu" class="nav__sidebar">
-            <li data-menuanchor="firstPage" class="sidebar__item active">
+            <li data-menuanchor="firstPage" class="sidebar__item">
                 <a href="#section0" class="sidebar__link"></a>
             </li>
             <li data-menuanchor="secondPage" class="sidebar__item">
@@ -1052,9 +1052,12 @@
                 </li>
         </ul>
     </nav>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.fullpage.min.js"></script>
-    <script src="./js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!--<script type="text/javascript" src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/plugins.js"></script>-->
     <script src="./js/common.js"></script>
     <script src="./js/main.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuSSnh1PLje6jn6oRrP4REMAeEBGsmXU&callback=initMap">
