@@ -85,7 +85,7 @@ $('[data-scroll-to]').on('click', e => {
 
 })
 
-/*if (isMobile) {
+if (isMobile) {
   $(document).swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
        // плагин возвращает фактическое...
@@ -95,7 +95,7 @@ $('[data-scroll-to]').on('click', e => {
       scrollToSection(scrollDirection);
     }
   });
-}*/
+}
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
