@@ -17,6 +17,21 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: absolute;
+    left: -3%;
+
+    @include laptop {
+        left: 5%;
+        z-index: 1;
+    }
+
+    @include tablets {
+        left: 13%;
+    }
+
+    @include phones {
+        left: 27%;
+    }
 }
 
 .slider__left {
@@ -36,6 +51,11 @@
     flex-direction: row;
     margin: 0;
     height: rem(500px);
+    position: relative;
+
+    @include laptop {
+        height: 90%;
+    }
 }
 
 .slider__content {
@@ -44,7 +64,6 @@
     display: flex;
     flex: .98;
     align-items: center;
-    position: relative;
     overflow: hidden;
 }
 
@@ -63,6 +82,14 @@
     height: 100%;
     align-items: center;
     position: relative;
+
+    @include laptop {
+        flex-direction: column;
+    }
+
+    @include tablets {
+        width: 921px;
+    }
 }
 
 .slider__img {
@@ -71,6 +98,23 @@
     display: flex;
     width: 50%;
     height: 70%;
+
+    @include laptop {
+        width: 35%;
+        height: 55%;
+    }
+
+    @include tablets {
+        width: 30%;
+        height: 50%;
+        margin-top: 5%;
+    }
+
+    @include phones {
+        width: 20%;
+        height: 40%;
+        margin-top: 8%;
+    }
 }
 
 .slider__burger {
@@ -99,6 +143,18 @@
         &:hover .slider__composition-prod {
             display: block;
         }
+    }
+
+    @include laptop {
+        left: 10%;
+    }
+
+    @include tablets {
+        left: 18%;
+    }
+
+    @include phones {
+        left: 27%;
     }
 }
 
@@ -166,6 +222,19 @@
     position: absolute;
     bottom: 0;
     left: rem(35px);
+
+    @include laptop {
+        left: 80%;
+        top: 0;
+    }
+
+    @include tablets {
+        left: 72%;
+    }
+
+    @include phones {
+        left: 64%;
+    }
 }
 
 .slider__calories-kkal {
@@ -199,6 +268,18 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
+
+    @include laptop {
+        width: 65%;
+    }
+
+    @include tablets {
+        margin-top: 5%;
+    }
+
+    @include phones {
+        width: 45%;
+    }
 }
 
 .section__title-slider {
@@ -211,9 +292,19 @@
     width: 99%;
     padding-bottom: rem(40px);
 
+    @include laptop {
+        text-align: center;
+        font-size: rem(65px);
+        padding-bottom: rem(25px);
+    }
+
     @include tablets {
         font-size: rem(56px);
         text-align: center;
+    }
+
+    @include phones {
+        width: 65%;
     }
 }
 
@@ -225,6 +316,10 @@
     line-height: 1.45;
     text-decoration: none;
     width: 99%;
+
+    @include laptop {
+        text-align-last: center;
+    }
 }
 
 .slider__order {
@@ -232,6 +327,14 @@
     flex-direction: row;
     align-items: baseline;
     width: 99%;
+
+    @include laptop {
+        justify-content: center;
+    }
+
+    @include phones {
+        margin-top: 5%;
+    }
 }
 
 .section__title-price1 {
@@ -249,6 +352,21 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: -3%;
+
+    @include laptop {
+        right: 5%;
+        z-index: 1;
+    }
+
+    @include tablets {
+        right: 13%;
+    }
+
+    @include phones {
+        right: 27%;
+    }
 }
 
 .slider__right {

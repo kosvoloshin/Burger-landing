@@ -13,9 +13,9 @@ function submitForm (ev) {
             status = msg.status;
         
         if (status === 'OK') {
-            form.append('<p class="success">' + mes + '</p>');
+            //form.append('<p class="success">' + mes + '</p>');
         } else{
-            form.append('<p class="error">' + mes + '</p>');
+            //form.append('<p class="error">' + mes + '</p>');
         }
     }).fail(function(jqXHR, textStatus) {
         alert("Request failed: " + textStatus);

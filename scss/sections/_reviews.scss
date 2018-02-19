@@ -1,3 +1,7 @@
+.section__reviews {
+    position: relative;
+}
+
 .reviews {
     display: flex;
     justify-content: center;
@@ -92,7 +96,7 @@
     @include phones {
         display: flex;
         flex-direction: column;
-        //justify-content: space-around;
+        display: none;
     }
 }
 
@@ -112,8 +116,8 @@
     }
 
     @include phones {
-        font-size: rem(20px);
-        padding-top: 15%;
+        font-size: rem(26px);
+        padding-top: 18%;
     }
 }
 
@@ -163,12 +167,12 @@
     }
 
     @include phones {
-        margin-top: 15%;
+        margin-top: 35%;
     }
 }
 
 .reviews__modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -188,6 +192,10 @@
     border-radius: rem(5px);
     position: relative;
     padding: rem(30px) rem(20px);
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .reviews__modal-name {

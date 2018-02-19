@@ -55,6 +55,8 @@
 
     @include phones {
         align-items: center;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -93,6 +95,7 @@
 
     @include phones {
         padding-top: rem(5px);
+        margin: 0;
     }
 }
 

@@ -10,7 +10,7 @@ const isMobile = mobileDetect.mobile();
 const setActiveMenuItem = itemEq => {
   $('.sidebar__item').eq(itemEq).addClass('active')
     .siblings().removeClass('active')
-} 
+}
 
 const performTransition = sectionEq => {
   const position = `${sectionEq * -100}%`;
@@ -33,7 +33,7 @@ const performTransition = sectionEq => {
   setTimeout(() => {
     inScroll = false;
     setActiveMenuItem(sectionEq);
-  }, 700); // продолжительность анимации + 300ms - потому что закончится инерция
+  }, 700); // продолжительность анимации
 };
 
 const scrollToSection = direction => {
@@ -287,35 +287,6 @@ closeMenu.addEventListener('click', function () {
     modalMenu.style.display = 'none';
 })
 
-/*
-var openButton = document.querySelector("#openOverlay");
-
-    function openOverlay(content) {
-        var overlayElement = document.createElement("div");
-        overlayElement.classList.add("overlay");
-
-        var template = document.querySelector("#overlayTemplate");
-        overlayElement.innerHTML = template.innerHTML;
-
-        var closeElement = overlayElement.querySelector(".overlay__close");
-        closeElement.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.body.removeChild(overlayElement);
-        });
-
-        var contentElement = overlayElement.querySelector(".overlay__content");
-        contentElement.innerHTML = content;
-
-        return overlayElement;
-    }
-    
-    var succesOverlay = openOverlay("1234");
-
-    openButton.addEventListener("click", function () {
-        document.body.appendChild(succesOverlay);
-    });
-*/
-
 // map
 
 function initMap() {
@@ -358,3 +329,4 @@ function initMap() {
         icon: image
     });
 }
+
