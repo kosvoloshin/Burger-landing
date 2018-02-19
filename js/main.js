@@ -85,19 +85,18 @@ $('[data-scroll-to]').on('click', e => {
 
 })
 
-if (isMobile) {
+/*if (isMobile) {
   $(document).swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-      /**
-       * плагин возвращает фактическое...
-       * ...
-       */
+       // плагин возвращает фактическое...
+       
       const scrollDirection = direction === 'down' ? 'up' : 'down';
       
       scrollToSection(scrollDirection);
     }
   });
-}
+}*/
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
