@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
 }
 
 .section__title-order {
@@ -197,3 +198,16 @@
     cursor: pointer;
     background: none;
 }
+
+/*.modal__order {
+    height: rem(254px);
+    width: rem(460px);
+    background: #fff;
+    border-radius: rem(5px);
+    position: absolute;
+    padding: rem(30px) rem(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}*/

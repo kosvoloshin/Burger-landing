@@ -1656,7 +1656,8 @@ ul {
   background-image: url(../img/bg/bg-order.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
 
 .section__title-order {
   width: 100%;
@@ -1840,6 +1841,18 @@ ul {
   cursor: pointer;
   background: none; }
 
+/*.modal__order {
+    height: rem(254px);
+    width: rem(460px);
+    background: #fff;
+    border-radius: rem(5px);
+    position: absolute;
+    padding: rem(30px) rem(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}*/
 .section__contacts {
   background-repeat: no-repeat;
   background-size: cover;
