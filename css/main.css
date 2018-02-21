@@ -99,6 +99,9 @@ ul {
   @media screen and (max-width: 768px) {
     .section {
       min-height: initial; } }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-height: 100%; } }
 
 .order-link {
   min-width: 98px;
@@ -517,9 +520,6 @@ ul {
       -webkit-box-flex: initial;
       -ms-flex: initial;
       flex: initial; } }
-  @media screen and (max-width: 480px) {
-    .start__img, .start__description {
-      margin-right: 0; } }
 
 .start__burger {
   max-width: 100%;

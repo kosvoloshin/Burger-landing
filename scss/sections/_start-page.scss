@@ -216,10 +216,6 @@
         flex-basis: auto;
         flex: initial;
     }
-
-    @include phones {
-        margin-right: 0;
-    }
 }
 
 .start__burger {

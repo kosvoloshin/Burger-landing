@@ -124,7 +124,18 @@ var right = document.querySelector("#right");
 var sliderList = document.querySelector('.slider__list');
 var sliderContainer = document.querySelector('.slider__content');
 var size = parseInt(getComputedStyle(sliderContainer).width);
+var sliderDirection;
 var start = 1;
+
+$(".slider__list").swipe({
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+        console.log(event);
+        if (event.type == 'touchend')   {
+            scrollToSlide(direction);
+        }
+    }
+})
 
 left.addEventListener('click', function (e) {
     e.preventDefault();
