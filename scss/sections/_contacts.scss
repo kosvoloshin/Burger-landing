@@ -1,4 +1,4 @@
-.section__contacts {
+.contacts {
     //background-image: url(../img/bg/bg-map.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,6 +7,7 @@
 
 .contacts__container {
     max-width: 100%;
+    justify-content: inherit;
 }
 
 .map {
@@ -19,7 +20,7 @@
     background-image: url(../img/bg/bg-footer.jpg);
     height: rem(58px);
     width: 100%;
-    //position: absolute;
+    position: absolute;
     bottom: 0;
 
     @include phones {

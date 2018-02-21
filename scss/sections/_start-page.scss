@@ -1,14 +1,9 @@
-.section__start {
+.start {
     background-image: url(../img/bg/video-bg.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
-}
-
-.start {
     height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -45,13 +40,13 @@
     align-items: center;
 }
 
-.nav__list-tabl {
+.nav-tabl__list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.nav__item-tabl {
+.nav-tabl__item {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
@@ -68,7 +63,7 @@
     }
 }
 
-.nav__link-tabl {
+.nav-tabl__link {
     color: #ffffff;
     font-family: 'ubuntu';
     font-size: rem(14px);
@@ -220,6 +215,10 @@
         display: flex;
         flex-basis: auto;
         flex: initial;
+    }
+
+    @include phones {
+        margin-right: 0;
     }
 }
 

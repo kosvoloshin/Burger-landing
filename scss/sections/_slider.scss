@@ -1,13 +1,9 @@
-.section__slider {
+.slider {
     background: linear-gradient(#f9b43b, #eb8c38, #f9b43b);
     background-size: cover;
     display: flex;
-}
-
-.slider {
     height: 100%;
     width: 100%;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -21,16 +17,16 @@
     left: -3%;
 
     @include laptop {
-        left: 5%;
+        left: 15%;
         z-index: 1;
     }
 
     @include tablets {
-        left: 13%;
+        left: 25%;
     }
 
     @include phones {
-        left: 27%;
+        left: 34%;
     }
 }
 
@@ -96,8 +92,13 @@
     position: relative;
     overflow: hidden;
     display: flex;
-    width: 50%;
-    height: 70%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: rem(380px);
+    width: rem(380px);
+
 
     @include laptop {
         width: 35%;
@@ -146,15 +147,15 @@
     }
 
     @include laptop {
-        left: 10%;
+        left: 15%;
     }
 
     @include tablets {
-        left: 18%;
+        left: 25%;
     }
 
     @include phones {
-        left: 27%;
+        left: 34%;
     }
 }
 
@@ -224,16 +225,16 @@
     left: rem(35px);
 
     @include laptop {
-        left: 80%;
+        left: 75%;
         top: 0;
     }
 
     @include tablets {
-        left: 72%;
+        left: 67%;
     }
 
     @include phones {
-        left: 64%;
+        left: 60%;
     }
 }
 
@@ -279,6 +280,7 @@
 
     @include phones {
         width: 45%;
+        margin-top: 0;
     }
 }
 
@@ -301,6 +303,7 @@
     @include tablets {
         font-size: rem(56px);
         text-align: center;
+        font-size: rem(49px);
     }
 
     @include phones {
@@ -320,6 +323,14 @@
     @include laptop {
         text-align-last: center;
     }
+
+    @include tablets {
+        width: 70%;
+    }
+
+    @include phones {
+        width: 70%;
+    }
 }
 
 .slider__order {
@@ -333,7 +344,7 @@
     }
 
     @include phones {
-        margin-top: 5%;
+        //margin-top: 5%;
     }
 }
 
@@ -356,16 +367,16 @@
     right: -3%;
 
     @include laptop {
-        right: 5%;
+        right: 15%;
         z-index: 1;
     }
 
     @include tablets {
-        right: 13%;
+        right: 25%;
     }
 
     @include phones {
-        right: 27%;
+        right: 34%;
     }
 }
 
